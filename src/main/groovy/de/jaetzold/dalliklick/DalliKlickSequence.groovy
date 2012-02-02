@@ -16,8 +16,8 @@ import java.awt.image.BufferedImage
  * <p><small>Created at 28.01.12, 13:57</small>
  */
 class DalliKlickSequence {
-    private final Color SEGMENT_COLOR = Color.WHITE
-    private final Color COUNTER_COLOR = Color.BLACK
+    private final Color SEGMENT_COLOR = Color.BLACK
+    private final Color COUNTER_COLOR = Color.WHITE
     private final Font COUNTER_FONT
     private final BufferedImage sourceImage
     private final int width
