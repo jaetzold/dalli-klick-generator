@@ -1,0 +1,18 @@
+# Mac OS X Finder and whatnot
+.DS_Store
+
+# build products
+target/
+
+# Other source repository archive directories (protects when importing)
+.hg
+.svn
+CVS
+
+# automatic backup files
+*~.nib
+*.swp
+*~
+
+# local ide configuration
+.idea/
