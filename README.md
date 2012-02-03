@@ -17,7 +17,7 @@ Diese werden in der Voreinstellung im Uhrzeigersinn aufgedeckt, mit dem mittlere
 Parameter
 ---------
 
-Die Voreinstellungen kann man veraendern, indem man Parameter in den Dateinamen einbettet.
+Die Voreinstellungen kann man veraendern, indem man Parameter in den Dateinamen einbettet, und zwar direkt vor der Dateiendung mit einem Punkt vom eigentlichen Dateinamen davor getrennt.
 Man kann die Anzahl und Reihenfolge der Kreissegmente, ob ein mittlerer Kreis verdeckt ist und ob eine Punktzahl angezeigt wird veraendern.
 
 Beispiele:
