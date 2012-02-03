@@ -21,10 +21,10 @@ Die Voreinstellungen kann man veraendern, indem man Parameter in den Dateinamen 
 Man kann die Anzahl und Reihenfolge der Kreissegmente, ob ein mittlerer Kreis verdeckt ist und ob eine Punktzahl angezeigt wird veraendern.
 
 Beispiele:
-# `bild.12-6-8-2-10-4-1-5-9-11-3-7.jpg` - produziert 12 Tortensegmente und einen Kreis in der Mitte, mit Punkteanzeige und deckt die Tortensegmente in der angegebenen, recht durcheinandergewuerfelten Reihenfolge auf.
-# `bild.-6-5-4-3-2-1.jpg` - produziert 6 Tortensegmente _ohne_ Kreis in der Mitte und ohne Punkteanzeige.
-# `bild.k-1-3-5-7-2-4-6-8.jpg` - produziert 8 Tortensegmente und einen Kreis in der Mitte, keine Punkteanzeige und deckt die Tortensegmente in der angegebenen Reihenfolge (immer eins wird uebersprungen) auf.
-# `bild.p.jpg` - produziert 12 Tortensegmente (default) _ohne_ Kreis in der Mitte aber mit Punkteanzeige.
-# `bild..jpg` - produziert 12 Tortensegmente (default) _ohne_ Kreis in der Mitte und ohne Punkteanzeige.
+* `bild.12-6-8-2-10-4-1-5-9-11-3-7.jpg` - produziert 12 Tortensegmente und einen Kreis in der Mitte, mit Punkteanzeige und deckt die Tortensegmente in der angegebenen, recht durcheinandergewuerfelten Reihenfolge auf.
+* `bild.-6-5-4-3-2-1.jpg` - produziert 6 Tortensegmente _ohne_ Kreis in der Mitte und ohne Punkteanzeige.
+* `bild.k-1-3-5-7-2-4-6-8.jpg` - produziert 8 Tortensegmente und einen Kreis in der Mitte, keine Punkteanzeige und deckt die Tortensegmente in der angegebenen Reihenfolge (immer eins wird uebersprungen) auf.
+* `bild.p.jpg` - produziert 12 Tortensegmente (default) _ohne_ Kreis in der Mitte aber mit Punkteanzeige.
+* `bild..jpg` - produziert 12 Tortensegmente (default) _ohne_ Kreis in der Mitte und ohne Punkteanzeige.
 
 Alles klar? ;-)
