@@ -115,7 +115,6 @@ class DalliKlickSequence {
                                                            (width*0.9-counterWidth).intValue(), (height*0.9-counterHeight).intValue())
                 counterPosition.setLocation(counterPosition.x+(width-counterWidth)/2.0, counterPosition.y+(height+counterHeight/2)/2.0);
             }
-            println counterPosition
             g.drawString(counterString, counterPosition.x.floatValue(), counterPosition.y.floatValue())
         }
 

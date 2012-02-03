@@ -21,8 +21,8 @@ public class DalliKlickGenerator {
 
 	public void generateForFile(File file) {
 		DalliKlickSequence sequence = new DalliKlickSequence(ImageIO.read(file))
-        List<Integer> revealSequence = revealSequenceFromFileName(file.getName())?:1..12
-        List<String> flags = flagsFromFileName(file.getName()) ?: ["k", "p"]
+        List<Integer> revealSequence = revealSequenceFromFileName(file.getName())
+        List<String> flags = flagsFromFileName(file.getName())
         boolean innerCircle = flags.contains("k")
         boolean addCounter = flags.contains("p")
         List<BufferedImage> images = sequence.generateImages(revealSequence, innerCircle, addCounter);
@@ -45,15 +45,25 @@ public class DalliKlickGenerator {
         name = name.substring(0, name.lastIndexOf("."));
         if(hasEmbeddedParameters(name)) {
             name = name.substring(name.lastIndexOf(".")+1);
+            if(name.length()==0) {
+                return 1..12
+            }
             if(!name.charAt(0).isDigit()) {
                 // strip flags
-                name = name.substring(name.indexOf("-")+1);
+                int delimiterPos = name.indexOf("-")
+                if(delimiterPos==-1) {
+                    return 1..12
+                }
+                name = name.substring(delimiterPos+1);
             }
             return name.split("-").collect {
-                it.toInteger();
+                try {
+                    it.toInteger();
+                } catch (NumberFormatException e) {
+                }
             }
         } else {
-            return null;
+            return 1..12;
         }
     }
 
@@ -62,15 +72,21 @@ public class DalliKlickGenerator {
         name = name.substring(0, name.lastIndexOf("."));
         if(hasEmbeddedParameters(name)) {
             name = name.substring(name.lastIndexOf(".")+1);
+            if(name.length()==0) {
+                return []
+            }
             if(!name.charAt(0).isDigit()) {
                 // strip sequence
-                name = name.substring(0, name.indexOf("-"));
+                int delimiterPos = name.indexOf("-")
+                if(delimiterPos!=-1) {
+                    name = name.substring(0, delimiterPos);
+                }
                 return name.split("")
             } else {
-                return null
+                return ["k", "p"]
             }
         } else {
-            return null;
+            return ["k", "p"];
         }
     }
 
